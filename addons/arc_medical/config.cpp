@@ -3,12 +3,11 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = 1.58;
-        requiredAddons[] = {"ace_medical"};
+        requiredAddons[] = {"ace_medical","ace_medical_menu"};
         author[]= {"Turd Ferguson"};
         authorUrl = "https://github.com/ARCOMM/ARC_Medical";
     };
 };
-
 
 class ACE_Medical_Actions {
     class Advanced {
@@ -88,7 +87,6 @@ class ACE_Medical_Actions {
                 class ContusionMinor: Contusion {};
                 class ContusionMedium: Contusion {};
                 class ContusionLarge: Contusion {};
-
                 class CrushWound: Abrasion {
                     effectiveness = 5;
                     reopeningChance = 0;
@@ -113,7 +111,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class Cut: Abrasion {
                     effectiveness = 5;
                     reopeningChance = 0;
@@ -121,7 +118,7 @@ class ACE_Medical_Actions {
                     reopeningMaxDelay = 0;
                 };
                 class CutMinor: Cut {
-                effectiveness = 5;
+                    effectiveness = 5;
                     reopeningChance = 0;
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
@@ -138,7 +135,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class Laceration: Abrasion {
                     effectiveness = 5;
                     reopeningChance = 0;
@@ -163,7 +159,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class velocityWound: Abrasion {
                     effectiveness = 5;
                     reopeningChance = 0;
@@ -188,7 +183,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class punctureWound: Abrasion {
                     effectiveness = 5;
                     reopeningChance = 0;
@@ -239,7 +233,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 5;
                     reopeningMaxDelay = 10;
                 };
-
                 class Avulsions: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.3;
@@ -279,7 +272,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class CrushWound: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.2;
@@ -304,7 +296,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 120;
                     reopeningMaxDelay = 200;
                 };
-
                 class Cut: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.4;
@@ -329,7 +320,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 300;
                     reopeningMaxDelay = 2060;
                 };
-
                 class Laceration: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.5;
@@ -396,7 +386,6 @@ class ACE_Medical_Actions {
                     reopeningMaxDelay = 300;
                 };
             };
-
             class ElasticBandage: fieldDressing {
                 class Abrasion {
                     effectiveness = 0;
@@ -413,7 +402,6 @@ class ACE_Medical_Actions {
                     reopeningChance = 0;
                     reopeningMinDelay = 0;
                 };
-
                 class Avulsions: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.4;
@@ -434,7 +422,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 120;
                     reopeningMaxDelay = 200;
                 };
-
                 class Contusion: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0;
@@ -444,7 +431,6 @@ class ACE_Medical_Actions {
                 class ContusionMinor: Contusion {};
                 class ContusionMedium: Contusion {};
                 class ContusionLarge: Contusion {};
-
                 class CrushWound: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0;
@@ -459,7 +445,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class Cut: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.2;
@@ -477,7 +462,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 10;
                     reopeningMaxDelay = 400;
                 };
-
                 class Laceration: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.3;
@@ -494,7 +478,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 120;
                     reopeningMaxDelay = 260;
                 };
-
                 class velocityWound: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.5;
@@ -511,7 +494,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 20;
                     reopeningMaxDelay = 300;
                 };
-
                 class punctureWound: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.3;
@@ -545,7 +527,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class Avulsions: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.1;
@@ -562,7 +543,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 300;
                     reopeningMaxDelay = 350;
                 };
-
                 class Contusion: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0;
@@ -577,7 +557,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class CrushWound: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0;
@@ -595,7 +574,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class Cut: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0;
@@ -613,7 +591,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 100;
                     reopeningMaxDelay = 400;
                 };
-
                 class Laceration: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0;
@@ -630,7 +607,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 0;
                     reopeningMaxDelay = 0;
                 };
-
                 class velocityWound: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0;
@@ -647,7 +623,6 @@ class ACE_Medical_Actions {
                     reopeningMinDelay = 200;
                     reopeningMaxDelay = 300;
                 };
-
                 class punctureWound: Abrasion {
                     effectiveness = 0;
                     reopeningChance = 0.05;
