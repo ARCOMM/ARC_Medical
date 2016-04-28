@@ -22,6 +22,9 @@ class ACE_Medical_Actions {
             allowSelfTreatment = 1;
         };
     };
+};
+
+class ACE_Medical_Advanced {
     class Treatment {
         class Bandaging {
             class FieldDressing {
